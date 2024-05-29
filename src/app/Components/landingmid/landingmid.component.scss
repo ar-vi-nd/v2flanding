@@ -1,0 +1,148 @@
+.packages-section {
+    padding: 50px 15px;
+    background-color: #ffffff;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cardprev {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.cardprev .bar {
+    width: 150px;
+    height: 5px;
+    background-color: rgb(189, 55, 55);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+p {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.learn-more {
+    display: inline-block;
+    color: #28a745;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.learn-more::after {
+    content: ' ➔';
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.learn-more:hover::after {
+    transform: translateX(5px);
+}
+
+.cardparent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.card {
+    box-shadow: -10px 0 10px -10px rgb(32, 32, 32),
+    10px 0 10px -10px rgb(32, 32, 32),
+    0px 10px 10px -10px rgb(32, 32, 32);
+    width: 200px;
+    margin: 10px 10px;
+    border-radius: 1px solid grey;
+}
+
+.card .square {
+    background-color: #396B;
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: #396B;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .barforcards {
+    width: 100px;
+    height: 2px;
+    background-color: rgb(189, 55, 55);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width : 1000px){
+    .section2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardprev {
+        width: 100%;
+        justify-content: center;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    .cardparent {
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+    .card {
+        width: 50%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 780px) {
+    .section2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardprev {
+        width: 100%;
+        justify-content: center;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .cardparent {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .card {
+        width: 50%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+}

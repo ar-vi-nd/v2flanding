@@ -1,0 +1,73 @@
+.landing-section {
+    background-color: #FDF3F1;
+    padding-top: 10px;
+}
+
+
+.landing-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.landing-content h6 {
+    color: #28a745; /* Bootstrap success color */
+}
+.landing-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.landing-content p {
+    font-size: 1.25rem;
+    margin: 20px 0;
+}
+
+.landing-buttons{
+    gap: 20px;
+}
+.landing-buttons .btn {
+    width: 135px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+.landing-image img {
+    width: 100%;
+    height: auto;
+}
+@media (max-width: 768px) {
+
+    // .landing-section{
+        // padding: 100px;
+        // background-size:cover;
+        // background-position: center;
+        // background-image: url('../../../assets/images/hero-cover-1.png');
+    // }
+    .landing-content {
+        text-align: center;
+        border-radius: 10px;
+        // color: whitesmoke;
+    }
+    .landing-content h1 {
+        font-size: 2rem;
+    }
+    .landing-image {
+        display: none;
+    }
+    .landing-content p {
+        font-size: 1rem;
+        word-wrap: break-word;
+    }
+    .landing-buttons {
+        justify-content: center;
+        gap: 10px;
+    }
+    .landing-section {
+        flex-direction: column;
+    }
+    .landing-image {
+        margin-top: 20px;
+    }
+}
