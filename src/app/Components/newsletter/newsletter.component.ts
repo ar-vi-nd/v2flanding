@@ -26,8 +26,7 @@ export class NewsletterComponent {
 
   onSubmit() {
     if (this.userForm.valid) {
-      this.isFormSubmitted = true; // Set the flag to true when form is valid and submitted
-      // Perform the email submission action, e.g., call a service to submit the email
+      this.isFormSubmitted = true;
       console.log('Email:', this.userForm.value.email);
       
       setTimeout(() => {
@@ -37,7 +36,6 @@ export class NewsletterComponent {
       }, 3000);
 
     } else {
-      // Mark all fields as touched to trigger validation messages
       this.userForm.markAllAsTouched();
     }
   }
