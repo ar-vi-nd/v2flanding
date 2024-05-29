@@ -9,6 +9,6 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
-  BrandName = "Visa2Fly";
+  BrandName = "BrandName";
 
 }

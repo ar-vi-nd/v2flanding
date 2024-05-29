@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="headin">Newsletter</div>
+    <div class="headi">
+        <h3>Watch Our Courses</h3>
+    </div>
+    <span class="span1">Problems trying to resolve the conflict between</span><span>the two major realms
+        of Classical physics: </span><span class="span2">Newtonian mechanics</span>
+
+    <form class="d-flex needs-validation" role="search" [formGroup]="userForm" (click)="onSubmit()">
+
+        <input class="form-control me-2" type="email" placeholder="example@gmail.com" aria-label="Search"
+            formControlName="email">
+        <button class="btn btn" style="background-color: #96BA7B;" type="submit">Search</button>
+
+    </form>
+
+    <div class="validationerror"> 
+
+        <div class="text-danger"
+        *ngIf="userForm.controls['email'].invalid  && (userForm.controls['email'].touched || userForm.controls['email'].dirty||isFormSubmitted)">
+        <span *ngIf="userForm.controls['email'].errors?.['required']"> This IS Required </span>
+        <span *ngIf="userForm.controls['email'].errors?.['email']"> Email Is Not Proper </span>
+        
+    </div>
+    <span *ngIf="isFormSubmitted" class="text-success">Email Submitted</span>
+</div>
+</div>

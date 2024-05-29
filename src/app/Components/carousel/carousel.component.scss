@@ -1,0 +1,71 @@
+.header-text{
+    color: #96BA7B;
+}
+.team-member {
+
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    border: 1px solid transparent;
+    margin-top: 1rem; 
+    margin-bottom: 1rem; 
+    max-width: 200px;
+  }
+  
+  .team-member:hover {
+    transform: translateY(-5px);
+    border-color: #ccc;
+  }
+  
+  .team-image {
+    width: 100%;
+    height: 100%; /* Make the image take the full height of its container */
+    object-fit: cover; /* Ensure the image covers the whole container without distortion */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  h4, h5 {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .social-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .team-carousel .p-carousel-content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  /* Media Queries */
+
+  
+  @media (max-width: 768px) {
+    .team-member {
+      flex: 1 0 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media (max-width: 778px) {
+    .team-member {
+      max-width: 100%; /* Make cards take full width */
+      margin-right: 0; /* Remove right margin */
+      margin-bottom: 1rem; /* Optional: Adjust as needed */
+    }
+  }
+  
+  
